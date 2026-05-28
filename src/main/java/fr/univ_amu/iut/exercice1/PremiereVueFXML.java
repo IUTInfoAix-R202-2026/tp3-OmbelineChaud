@@ -3,6 +3,8 @@ package fr.univ_amu.iut.exercice1;
 import java.net.URL;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 /**
@@ -35,14 +37,16 @@ public class PremiereVueFXML extends Application {
     // fr.univ_amu.iut.exercice1).
     // Utiliser getClass().getResource("PremiereVueFXML.fxml") - JavaFX trouvera le
     // fichier en cherchant dans le paquetage courant.
-    getClass().getResource("PremiereVueFXML.fxml");
     //
     // 2. Appeler FXMLLoader.load(url) qui retourne un Parent (ici un BorderPane).
+    BorderPane root = FXMLLoader.load(getClass().getResource("PremiereVueFXML.fxml"));
     //
     // 3. Créer une Scene avec ce Parent et la donner à primaryStage.
+    Scene scene = new Scene(root);
+    primaryStage.setScene(scene);
     //
     // 4. Ajouter un titre et show().
-
+    primaryStage.setTitle("Première vue FXML");
     primaryStage.show();
   }
 }
