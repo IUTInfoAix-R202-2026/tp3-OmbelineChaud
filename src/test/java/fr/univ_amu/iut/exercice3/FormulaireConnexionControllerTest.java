@@ -20,13 +20,20 @@ import org.testfx.framework.junit5.Start;
 /**
  * Tests de l'exercice 3 - Formulaire de connexion en FXML.
  *
- * <p>On vérifie : la présence des contrôles avec les bons {@code fx:id}, l'état initial des boutons
- * (OK désactivé, Annuler désactivé), les bindings de validation (mot de passe non éditable tant que
- * l'identifiant est trop court, OK activé seulement si le mot de passe est valide), et les actions
+ * <p>
+ * On vérifie : la présence des contrôles avec les bons {@code fx:id}, l'état
+ * initial des boutons
+ * (OK désactivé, Annuler désactivé), les bindings de validation (mot de passe
+ * non éditable tant que
+ * l'identifiant est trop court, OK activé seulement si le mot de passe est
+ * valide), et les actions
  * des deux actions de boutons.
  *
- * <p>Les saisies sont faites via {@code robot.interact(() -> field.setText(...))} pour ne pas
- * prendre le contrôle du clavier physique pendant les tests. Les clics utilisent {@code
+ * <p>
+ * Les saisies sont faites via {@code robot.interact(() -> field.setText(...))}
+ * pour ne pas
+ * prendre le contrôle du clavier physique pendant les tests. Les clics
+ * utilisent {@code
  * button.fire()} pour la même raison.
  */
 @ExtendWith(ApplicationExtension.class)
