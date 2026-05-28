@@ -34,7 +34,7 @@
       BorderPane.alignment="CENTER" />
   </top>
   <center>
-    <Label text="texte libre je sais pas" wrapText="true" BorderPane.alignment="CENTER" />
+    <Label text="Bienvenue" wrapText="true" BorderPane.alignment="CENTER" />
   </center>
   <bottom>
     <Button text="D'accord, c'est magique" BorderPane.alignment="CENTER" />
