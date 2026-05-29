@@ -5,7 +5,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
@@ -34,7 +33,6 @@ class CompteurControllerTest {
 
   // --- Étape 1 : le label affiche 0 au démarrage ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(1)
   void le_compteur_affiche_zero_au_demarrage(FxRobot robot) {
